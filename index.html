@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undo Redo text Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Section -->
+    <div id="top-bar">
+        <button id="undo">
+            <i class="fa-solid fa-rotate-left"></i>
+            <p>Undo</p>
+        </button>
+        <button id="redo">
+            <i class="fa-solid fa-rotate-right"></i>
+            <p>Redo</p>
+        </button>
+    </div>
+
+    <!-- Middle Section -->
+    <div id="canvas-container">
+        <div id="canvas"></div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div id="bottom-bar">
+        <input type="text" id="text-input" placeholder="Enter your text" />
+        <button id="add-text">Add Text</button>
+
+        <label for="font-size">Font Size:</label>
+        <input type="number" id="font-size" min="10" max="50" value="16">
+
+        <label for="font-style">Font Style:</label>
+        <select id="font-style">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Tahoma">Tahoma</option>
+        </select>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color">
+
+        <!-- Add buttons for bold, italic, underline -->
+        <button id="bold"><i class="fa-solid fa-bold"></i></button>
+        <button id="italic"><i class="fa-solid fa-italic"></i></button>
+        <button id="underline"><i class="fa-solid fa-underline"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
